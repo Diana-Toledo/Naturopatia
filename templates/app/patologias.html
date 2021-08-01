@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap4 %} {% block content%}
+
+
+<div class="container-fluid cajitas">
+    <div class="row mb-5">
+        {% for p in Psis %}
+
+        <div class="col-sm-4 d-flex justify-content-center mb-3 mt-5">
+            <div class="card w-60 responsive cajita">
+                <div class="card-body pato text-center">
+                    <h5 class="card-title"> {{ p.nombresistema }}</h5>
+                    <div class="dropdown">
+
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Ver patologia<i class="fas fa-plus-square ml-2"></i> </button>
+
+                        <div class="dropdown-menu cajitas">
+                            {% for y in p.patologias.all %}
+                            <span class="dropdown-item-text">{{ y.nombrepatologia }}</span> {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content%}

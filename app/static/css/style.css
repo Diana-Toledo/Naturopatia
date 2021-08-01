@@ -1,0 +1,315 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*AJUSTA EL TAMAÑO DE LAS IMAGENES*/
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*DA EFECTO A LAS FOTOS CUANDO PONES EL RATON*/
+
+img {
+    margin-bottom: -6px;
+    cursor: pointer
+}
+
+img:hover {
+    opacity: 0.6;
+    transition: 0.3s
+}
+
+.img-top {
+    height: 250px;
+    width: 250px;
+    /*los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.imgTestimonio {
+    height: 150px;
+    width: 150px;
+    /*los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+
+/*FONDO NAVBAR*/
+
+.navbar-default {
+    background-color: #e0f2f1;
+}
+
+.navbar-brand:hover {
+    color: rgb(77, 184, 118);
+}
+
+
+/*LOGO*/
+
+.navbar-brand {
+    color: rgb(77, 184, 118);
+}
+
+
+/*LINK*/
+
+.nav-link {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50px;
+    color: #16a374;
+    text-shadow: #4EBE7B 0.1em 0.1em 0.2em;
+    font-style: italic;
+}
+
+
+/*CONTENIDO MULTIMEDIA*/
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+/*INDEX NUESTRO CENTRO/INDEX SOBRE MI*/
+
+
+/*Coloca los textos*/
+
+@media screen and (min-width:978px) {
+    .hoc {
+        max-width: 978px;
+    }
+}
+
+
+/*Descripcion Nuestro Centro*/
+
+.row3 {
+    color: #7A7A7A;
+    background-color: #FFFFFF;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+.sectiontitle {
+    display: block;
+    max-width: 55%;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.sectiontitle * {
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 55px;
+    text-decoration: underline;
+    color: #16a374;
+    text-shadow: #4EBE7B 0.1em 0.1em 0.2em;
+    font-style: italic;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+    75% {
+        font-size: 150%;
+        margin-left: 20%;
+    }
+}
+
+
+/*Centra el texto sobre mi*/
+
+#testimonials article * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.one_half.first {
+    margin-left: 50px;
+}
+
+.heading.textoSobremi {
+    margin-top: 100px;
+}
+
+
+/*Bocadillo del texto*/
+
+.hoc {
+    margin: 0 auto;
+}
+
+.heading.textFoto {
+    margin-top: 70px;
+}
+
+#testimonials article blockquote {
+    padding: 22px;
+    border-radius: 25px 0;
+    color: #7A7A7A;
+    background-color: #e0f2f1;
+    font-size: 20px;
+}
+
+
+/*TRATAMIENTOS*/
+
+.titulo-tra {
+    margin-left: 0;
+}
+
+.post-title {
+    font-style: italic;
+    color: #4EBE7B;
+}
+
+
+/*PATOLOGIAS*/
+
+button.btn.btn-primary.dropdown-toggle {
+    background-color: #e0f2f1;
+    color: #4EBE7B;
+    border-color: #4EBE7B;
+    text-align: center;
+}
+
+h5.card-title {
+    color: #16a374;
+    font-style: italic;
+}
+
+.card-body.pato {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(#effcef, #ccedd2, #94d3ac, #2c7873);
+    display: inline-block;
+    margin: 0 0.05rem;
+    animation: reverse;
+    animation-duration: 2s;
+    height: 25px;
+}
+
+.margenp {
+    margin: 250px;
+}
+
+.dropdown-item-text {
+    font-size: 15px;
+    color: #7A7A7A;
+}
+
+.cajitas {
+    margin-bottom: 150px;
+}
+
+
+/*TRANSICION CAJITAS PATOLOGIAS*/
+
+div.cajita {
+    height: 100px;
+    transition-duration: 200s;
+    transition-timing-function: linear;
+    transition-delay: 200s;
+}
+
+div.cajita:hover {
+    height: 300px;
+}
+
+div.card.w-60 {
+    transition: width 2s, height 1s;
+}
+
+.dropdown-menu.show {
+    background-color: #e0f2f1;
+}
+
+
+/*BLOG*/
+
+.container.blog {
+    padding-bottom: 0;
+}
+
+h5.widget-title,
+.card-title {
+    color: #16a374;
+    /* text-shadow: #4EBE7B 0.1em 0.1em 0.2em; */
+}
+
+.title {
+    color: #027c53;
+    font-size: 17px;
+}
+
+p.card-text {
+    font-size: unset;
+}
+
+
+/*TESTIMONIOS*/
+
+.fondo {
+    background: linear-gradient(#effcef, #ccedd2, #94d3ac, #ccedd2);
+    ;
+}
+
+div.font-weight-normal {
+    font-size: 20px;
+    font-style: italic;
+    color: #7A7A7A;
+}
+
+.colorN {
+    color: rgb(97, 95, 95);
+}
+
+
+/*FOOTER*/
+
+.iconos {
+    padding-top: 15px;
+    background-color: #e0f2f1;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.fas {
+    color: #16a374;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+    color: #7A7A7A;
+}
